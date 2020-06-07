@@ -491,6 +491,7 @@ QString QZXing::decodeImage(const QImage &image, int maxWidth, int maxHeight, bo
     emit error(errorMessage);
     emit decodingFinished(false);
     processingTime = t.elapsed();
+    emit tagFound("");
     return "";
 }
 

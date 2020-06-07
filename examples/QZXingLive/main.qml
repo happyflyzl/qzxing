@@ -96,6 +96,11 @@ ApplicationWindow
 
         decoder {
             enabledDecoders: QZXing.DecoderFormat_EAN_13 | QZXing.DecoderFormat_CODE_39 | QZXing.DecoderFormat_QR_CODE
+                             | QZXing.DecoderFormat_DATA_MATRIX | QZXing.DecoderFormat_Aztec | QZXing.DecoderFormat_CODABAR
+            | QZXing.DecoderFormat_CODE_128 | QZXing.DecoderFormat_CODE_128_GS1 | QZXing.DecoderFormat_CODE_93 | QZXing.DecoderFormat_EAN_13
+            | QZXing.DecoderFormat_EAN_8 | QZXing.DecoderFormat_ITF | QZXing.DecoderFormat_MAXICODE | QZXing.DecoderFormat_PDF_417
+                             | QZXing.DecoderFormat_RSS_14 | QZXing.DecoderFormat_RSS_EXPANDED | QZXing.DecoderFormat_UPC_A | QZXing.DecoderFormat_UPC_E
+            | QZXing.DecoderFormat_UPC_EAN_EXTENSION
 
             onTagFound: {
                 console.log(tag + " | " + decoder.foundedFormat() + " | " + decoder.charSet());

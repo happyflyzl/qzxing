@@ -8,7 +8,7 @@ CONFIG += qzxing_multimedia \
           enable_decoder_pdf17
 
 CONFIG(debug, debug|release) {
-    CONFIG+=qml_debug
+    CONFIG += qml_debug
 } else {
     DEFINES += QT_NO_DEBUG
     DEFINES += QT_NO_DEBUG_OUTPUT

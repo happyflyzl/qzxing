@@ -124,7 +124,8 @@ ApplicationWindow
         {
            timePerFrameDecode = (decodeTime + framesDecoded * timePerFrameDecode) / (framesDecoded + 1);
            framesDecoded++;
-           console.log("frame finished: " + succeeded, decodeTime, timePerFrameDecode, framesDecoded);
+           if(succeeded)
+            console.log("frame finished: " + succeeded, decodeTime, timePerFrameDecode, framesDecoded);
         }
     }
 
